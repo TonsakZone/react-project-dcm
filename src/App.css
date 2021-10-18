@@ -1,38 +1,83 @@
+:root {
+  --fontsize-p: 20px;
+  --fontsize-nav: 28px;
+}
+* { /*reset browser*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+nav {
+  padding: 70px 10px 0px 10px; /* up right down left*/
+  background: rgb(255, 123, 0);
+}
+
+nav ul {
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 50px;
+}
+
+nav ul li a {
+  color: white; /*font color*/
+  text-decoration: none;
+}
+
+.custom {
+  padding: 100px;
+  background-color: rgb(252, 239, 229);
+  flex: var(--condiv-flex);
+}
+
+.container{
+  padding: 20px;
+  height: 100vh;
+  width: 100;
+  overflow-y: auto;
+  background-color: white ;
+}
+
+#enforce::-webkit-scrollbar { width: 0 !important }
+
+.home{
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  --condiv-flex: 6;
 }
 
-.App-link {
-  color: #61dafb;
+.hundred{
+  padding: 100px;
+  background-color: white;
+  flex: var(--condiv-flex);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.viewcsv{
+  padding: 20px 60px 20px 70px; /* up right down left*/
+  background-color: white;
+  font-family: sans-serif;
+  text-align: center;
+  width: 70vw;
+  min-height: 50vh;
+
 }
+
+.filedir{
+  padding:20px 0px 0px 30px; /* up right down left*/
+  background-color: white;
+  font-family: sans-serif;
+}
+
+

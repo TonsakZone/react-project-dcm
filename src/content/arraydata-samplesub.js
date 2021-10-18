@@ -1,0 +1,1 @@
+export const chartdatasub = [1214, 1263]
