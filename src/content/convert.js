@@ -12,21 +12,21 @@ csvtojson()
             if (err) console.log(err)
         })
 
-        var c1 = json.filter(t => t.NegativeforPneumonia === '0')
+        var c1 = json.filter(t => t[`Negative for Pneumonia`] === '0')
         console.log(c1.length);
-        var c2 = json.filter(t => t.NegativeforPneumonia === '1')
+        var c2 = json.filter(t => t[`Negative for Pneumonia`] === '1')
         console.log(c2.length);
-        var c3 = json.filter(t => t.TypicalAppearance === '0')
+        var c3 = json.filter(t => t[`Typical Appearance`] === '0')
         console.log(c3.length);
-        var c4 = json.filter(t => t.TypicalAppearance === '1')
+        var c4 = json.filter(t => t[`Typical Appearance`] === '1')
         console.log(c4.length);
-        var c5 = json.filter(t => t.IndeterminateAppearance === '0')
+        var c5 = json.filter(t => t[`Indeterminate Appearance`] === '0')
         console.log(c5.length);
-        var c6 = json.filter(t => t.IndeterminateAppearance === '1')
+        var c6 = json.filter(t => t[`Indeterminate Appearance`] === '1')
         console.log(c6.length);
-        var c7 = json.filter(t => t.AtypicalAppearance === '0')
+        var c7 = json.filter(t => t[`Atypical Appearance`] === '0')
         console.log(c7.length);
-        var c8 = json.filter(t => t.AtypicalAppearance === '1')
+        var c8 = json.filter(t => t[`Atypical Appearance`] === '1')
         console.log(c8.length);
         let alldata = [];
         alldata.push(c1.length);
@@ -63,6 +63,22 @@ csvtojson1()
         alldata.push(s2.length);
         fs.writeFileSync('./arraydata-samplesub1.txt', alldata.join('\n'));
 
+
+
+    })
+;
+
+const csvtojson2 = require('csvtojson')
+csvfilepath = "../datafile/train_image_level.csv"
+
+csvtojson2()
+    .fromFile(csvfilepath)
+    .then((json) => {
+        console.log(json)
+
+        fs.writeFileSync("Convert-5.json", JSON.stringify(json), "utf-8", (err) => {
+            if (err) console.log(err)
+        })
 
 
     })
