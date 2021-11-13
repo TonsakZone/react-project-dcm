@@ -35,7 +35,7 @@ const data1 = {
     ],
 };
 
-const options1 = { 
+const options = { 
     scales: { 
         y: { 
             display: false,
@@ -54,7 +54,7 @@ function Chart1() {
     return (
         <div className="container-mini">
             <Bar data={data1}
-            options={options1}/>
+            options={options}/>
         </div>
     );
 }
@@ -74,24 +74,12 @@ const data2 = {
     ]
  };
 
- const options2 = { 
-    scales: { 
-        y: { 
-            display: false,
-        },
-    },
-    plugins:{
-        legend: {
-          display: false
-        }
-    }
-}
 
 function Chart2() {
     return (
         <div className="container-mini">
             <Bar data={data2}
-            options={options2} />
+            options={options} />
         </div>
     );
 }
@@ -111,24 +99,13 @@ const data3 = {
     ]
  };
 
- const options3 = { 
-    scales: { 
-        y: { 
-            display: false,
-        },
-    },
-    plugins:{
-        legend: {
-          display: false
-        }
-    }
-}
+
 
 function Chart3() {
     return (
         <div className="container-mini">
             <Bar data={data3}
-            options={options3} />
+            options={options} />
         </div>
     );
 }
@@ -148,24 +125,12 @@ const data4 = {
     ]
  };
 
- const options4 = { 
-    scales: { 
-        y: { 
-            display: false,
-        },
-    },
-    plugins:{
-        legend: {
-          display: false
-        }
-    }
-}
 
 function Chart4() {
     return (
         <div className="container-mini">
             <Bar data={data4}
-            options={options4} />
+            options={options} />
         </div>
     );
 }
