@@ -1,0 +1,34 @@
+:root {
+  --fontsize-p: 20px;
+}
+
+
+.container{
+    padding: 20px;
+    height: 100vh;
+    min-height: 50vh;
+    width: 100%;
+    overflow-y: auto;
+    background-color: transparent ;
+    animation: fadein 2s;
+}
+
+#enforce::-webkit-scrollbar { width: 0 !important }
+
+.hundred{
+    padding: 100px;
+    background-color: white;
+    flex: var(--condiv-flex);
+    border: 2px solid rgb(247, 243, 243);
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to{
+      opacity: 1;
+    }
+}
