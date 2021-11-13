@@ -1,0 +1,35 @@
+Changelog:
+
+Patch date November 13, 2021
+
+Changes:
+	1.Rework App.css
+	2.Rework App.js
+	3.Fix CSS import in ImageViewer.js
+	4.Rework Navbar.js
+	5.Add CSS import in Navitems.js
+	6.Rework convert.js
+	7.Bug fixes in Convert-3.json and Convert-4.json
+	8.Bug fixes in Directory2.json
+	9.Fix CSS import in Home.js
+
+Adds:
+	1.Add Navigator.css
+	2.Add AllTable.css
+	3.Add Convert-5.json
+	4.Add DataCount-3.json
+	5.Add DataCount-4.json
+	6.Add DataCount-5.json
+	7.Add Home.css
+	8.Add Predict.js
+	9.Add TrainImage.js
+	10.Add TrainStudy.js
+
+Removes:
+	1.Remove CSV.js
+	2.Remove arraydata-samplesub.js
+	3.Remove arraydata-samplesub1.txt
+	4.Remove arraydata.js
+	5.Remove arraydata1.txt
+	
+	
