@@ -1,0 +1,36 @@
+
+.container-chart{
+    height: 100vh;
+    width: 85vw;
+    overflow-y: auto;
+    background-color: transparent ;
+    animation: fadein 2s;
+}
+
+.table {
+    height:20vh;
+    width:79vw;
+    padding:5px;
+}
+
+.container-mini{
+    height: 14.5vh;
+    width: 14.5vw;
+    background-color: transparent ;
+    animation: fadein 2s;
+}
+
+.idtext {
+    text-align: center;
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+  
+    to{
+      opacity: 1;
+    }
+}
+  
