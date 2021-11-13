@@ -2,11 +2,12 @@ import React from 'react'
 import './App.css';
 import Navbar from './components/Navbar.js';
 
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import Home from './content/Home.js'
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Home from './content/Home.js';
 import ImageViewer from './ImageViewer.js';
-import CSV from './content/CSV.js';
-
+import TrainStudy from './content/TrainStudy.js';
+import Predict from './content/Predict.js';
+import TrainImage from './content/TrainImage.js';
 
 function App() {
   return (
@@ -19,8 +20,14 @@ function App() {
         <Route exact path='/image'>
           <ImageViewer />
         </Route>
-        <Route exact path='/csv'>
-          <CSV />
+        <Route exact path='/trainstudy'>
+          <TrainStudy />
+        </Route>
+        <Route exact path='/samplesub'>
+          <Predict />
+        </Route>
+        <Route exact path='/trainimage'>
+          <TrainImage/>
         </Route>
      </div>
     </Router>
