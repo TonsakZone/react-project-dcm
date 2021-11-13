@@ -1,11 +1,16 @@
-react-app
-DCM and csv viewer (display as table)
+React-App
+DCM viewer and CSV viewer
+
+Patch date: 13/11/21
 
 react-backend folder contains
-1. index.js (nodejs server)
-2. miniserverdcm.py (python server)
+  1. index.js (nodejs server)
+  2. miniserverdcm.py (python flask server)
 
-description
-1. through1.js (go through directory and create .json for react-tree-view)
-2. ImageViewer.js (display tree and dcm images)
+Description
+  1. through1.js (//react-backend/server/) วน folder images เพื่อนำข้อมูลที่ได้มาสร้างเป็น directory tree
+  2. ImageViewer.js (//src/) แสดง directory tree และแสดงภาพ .dcm
+  3. App.js (//src/) จัดการ route ต่างๆของตัวเว็บ และแสดงผล
+  4. convert.js (//src/content) แปลงไฟล์ .csv -> .json แล้วนำข้อมูลมานับว่าอะไรมีกี่ตัวบ้าง จากนั้นเขียนไฟล์ .json เพื่อเก็บจำนวนที่นับได้
+  Project changes in changelog.txt
 
