@@ -11,6 +11,8 @@ Steps
   
 *** Use "npm run dev" to run all localhost simultaneously***
 
+*****Before running npm install, you must remove "proxy" from package.json file before running
+
 Patch date: 13/11/21
 
 react-backend folder contains
