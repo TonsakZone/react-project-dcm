@@ -1,6 +1,13 @@
 React-App
 DCM viewer and CSV viewer
 
+Steps
+  1.Clone this repository
+  2.Run "npm install"
+  3.Run "npm run dev" or run "npm start" if you want to run react-app only
+  
+*** Use "npm run dev" to run all localhost simultaneously***
+
 Patch date: 13/11/21
 
 react-backend folder contains
