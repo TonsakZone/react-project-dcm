@@ -1,6 +1,8 @@
 React-App
 DCM viewer and CSV viewer
 
+*This repository doesn't contains any .dcm file
+
 Steps
 
   1.Clone this repository
