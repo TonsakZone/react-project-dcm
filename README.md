@@ -11,7 +11,7 @@ Steps
   
 *** Use "npm run dev" to run all localhost simultaneously***
 
-*****Before running npm install, you must remove "proxy" from package.json file before running
+*****If you're stuck at npm install, try remove "proxy" from package.json then run npm install again
 
 Patch date: 13/11/21
 
