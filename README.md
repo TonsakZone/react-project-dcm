@@ -13,8 +13,6 @@ Steps
   
 *** Use "npm run dev" to run all localhost simultaneously***
 
-*****If you're stuck at npm install, try remove "proxy" from package.json then run npm install again
-
 Patch date: 13/11/21
 
 react-backend folder contains
